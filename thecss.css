@@ -1,12 +1,14 @@
 
 body {
     display: flex;
+    margin: 0;
 }
 
 
 form{
     flex: 1;
-    background-color: red;
+    height: 100%;
+    background-color: #f5624e;
     display: flex;
     flex-direction: column;
     color: white;
@@ -19,52 +21,101 @@ form{
     font-size: 2em;
     align-items: center;
     border-style: solid;
-    border-width: 2;
-    }
-  #row #label {
+    border-bottom-width: 0;
+    border-top-width: 2;
+    border-right-width: 2;
+    border-left-width: 2;
+    border-color: rgb(126, 215, 240);
+  }
+
+  
+
+  #label {
       flex:1;
-    background-color: blue;
     text-align: center;
  
 
   }
 
-  #row #label-heading {
+  #row-heading #label-heading {
     flex:1;
-  background-color: blue;
-  text-align: center;
+    text-align: center;
 
 }
-  #row #input {
+  #input {
       flex: 0.5;
-      background-color: blue;
       height: 40px;
       text-align: center;
   }
 
-  #row #input-heading {
+  #row-heading{
+    background-color: #eb4034;
+    flex:1;
+    display: flex;
+    font-size: 2.7em;
+    font-weight: bold;
+    align-items: center;
+    border-style: solid;
+    border-bottom-width: 0;
+    border-top-width: 2;
+    border-right-width: 2;
+    border-left-width: 2;
+    border-color: rgb(126, 215, 240);
+  }
+
+  #row-result{
+    background-color: #eb4034;
+    flex:1;
+    display: flex;
+    font-size: 2.7em;
+    font-weight: bold;
+    align-items: center;
+    border-bottom-width: 4;
+    border-top-width: 4;
+    border-right-width: 4;
+    border-left-width: 4;
+    border-color: rgb(126, 215, 240);
+    border-style: double;
+  }
+
+
+  #row-heading #input-heading {
     flex: 0.5;
-    background-color: blue;
     text-align: center;
 }
 
-  #row #total {
+ #total {
     flex:1;
-    background-color: blue;
     text-align: center;
 }
 
-#row #eligibility {
+#eligibility {
   flex:1;
-  background-color: blue;
   text-align: center;
+  border-right-width: 2;
+  border-color: rgb(126, 215, 240);
 }
 
-#row #resetButton {
-    height: 50px;
-    flex:1;
-    background-color: blue;
+#row-reset{
+  flex:1;
+  display: flex;
+  font-size: 2em;
+  align-items: center;
+  border-style: solid;
+  border-bottom-width: 0;
+  border-top-width: 0;
+  border-right-width: 2;
+  border-left-width: 2;
+  border-color: rgb(126, 215, 240);
+}
+
+
+#resetButton {
+    height: 60px;
+    flex:0.5;
     text-align: center;
     font-size: 50px;
-    color: white;
+    color: black;
+    margin: auto;
+    background-color: blanchedalmond;
 }
